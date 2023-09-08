@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block titulo %}
+    {{detalles_post.titulo}}
+{% endblock titulo %}
+
+{% block titulo_header %}
+    <h1>{{detalles_post.titulo}}</h1>
+    <p>{{detalles_post.descripcion}}</p>
+{% endblock titulo_header %}
+
+{% block imagen %}
+    {{detalles_post.imagen}}
+{% endblock imagen %}
+
+{% block contenido %}
+    {{detalles_post.contenido | safe}}
+{% endblock contenido %}
+
+{% block barra_busqueda %}
+{% endblock barra_busqueda %}
